@@ -1,0 +1,17 @@
+
+<CascadingAuthenticationState>
+
+<Router AppAssembly="@typeof(App).Assembly">
+    <Found Context="routeData">
+        
+        @* @routeData: nghĩa là khi / đến route nào thì nó sẽ dẫn đến route đó *@
+        <RouteView RouteData="@routeData">
+        </RouteView>
+
+
+        <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+
+    </Found>
+   
+</Router>
+</CascadingAuthenticationState>

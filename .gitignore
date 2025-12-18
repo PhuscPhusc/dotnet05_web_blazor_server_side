@@ -1,0 +1,3 @@
+# Lưu ý khi up code lên GitHub thì loại bỏ folder bin và folder obj vì mỗi máy, mỗi hệ điều hình build khác nhau
+/bin
+/obj

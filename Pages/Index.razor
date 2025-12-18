@@ -1,0 +1,13 @@
+@* Cho phép dùng các component trong folder Components *@
+@using web_blazor_server.Components 
+
+@* Tên file .razor sẽ viết IN HOA chữ cái đầu tiên *@
+
+@* Đây là cơ chế routing blazor  - cơ chế điều hướng giữa các trang và thành phần(Component) - có thể tạo nhiều route dẫn đến trang*@
+@*"/": nghĩa là đặt trang này là trang chủ, khi người dùng gõ local host thì sẽ mặc định đến trang này*@
+@page "/" 
+
+
+
+<Header /> @*Lưu ý gõ ĐÚNG TÊN FILE CHỨA HEAD*@
+<h1>Đây là trang chủ</h1>
