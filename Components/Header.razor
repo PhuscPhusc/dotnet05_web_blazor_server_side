@@ -6,18 +6,29 @@
     <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav me-auto mt-2 mt-lg-0">
             <li class="nav-item">@*Đường dẫn đến trang chủ(dùng "/") - href="" dựa theo @page ở trang mà bạn muốn dẫn đến*@
-                <a class="nav-link active" href="/" aria-current="page">Home <span
-                        class="visually-hidden">(current)</span></a>
+                @* Ngoài sử dụng thẻ <a> thì có thể dùng thẻ <NavLink> - Thẻ <NavLink> cho phép dùng ActiveClass="" để css trực tiếp  *@
+                @* <a class="nav-link active" href="/" aria-current="page">Home <span
+                        class="visually-hidden">(current)</span></a> *@
+                <NavLink class="nav-link active" ActiveClass="bg-success text-warning" href="/" aria-current="page" Match="NavLinkMatch.All">Home <span
+                        class="visually-hidden">(current)</span></NavLink>
+                @*
+                    Home luôn có nền xanh chữ vàng do bất kì thằng nào có đường dẫn là "/" thì luôn được active.
+                    Nếu muốn Home không luôn luôn bật nền xanh chữ vàng mà chỉ khi nào click vào mới bật thì thêm Match="NavLinkMatch.All" 
+                *@
             </li>
-            @*  *@
+            @* //// *@
+            @* //// *@
             <li class="nav-item">@*Đường dẫn đến trang Register - href="" dựa theo @page ở trang mà bạn muốn dẫn đến*@
                 <a class="nav-link" href="/register">Register</a>
             </li>
-            @*  *@
+            @* //// *@
+            @* //// *@
             <li class="nav-item">@*Đường dẫn đến trang Login - href="" dựa theo @page ở trang mà bạn muốn dẫn đến*@
-                <a class="nav-link" href="/login">Login</a>
+                @* <a class="nav-link" href="/login">Login</a> *@
+                <NavLink class="nav-link" ActiveClass="bg-primary text-danger" href="/login">Login</NavLink>
             </li>
-            @*  *@
+            @* //// *@
+            @* //// *@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">Dropdown</a>

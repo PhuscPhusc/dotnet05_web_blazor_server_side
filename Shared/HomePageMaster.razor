@@ -1,0 +1,15 @@
+@* Để xác định được có phải là 1 PageMaster hay không - Thì nếu có @inherits thì đó là PageMaster *@
+@inherits LayoutComponentBase
+
+@* Đưa Header.razor của folder Components vào *@
+<Header /> @*Sẽ xuất hiện trong toàn bộ các trang*@
+<div style="min-height: 75vh;">
+    @Body @*Đại diện cho những trang đó*@
+
+</div>
+
+
+
+<footer class="bg-black text-light p-2 text-center fs-4">
+    footer
+</footer>

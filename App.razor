@@ -3,9 +3,9 @@
 
 <Router AppAssembly="@typeof(App).Assembly">
     <Found Context="routeData">
-        
-        @* @routeData: nghĩa là khi / đến route nào thì nó sẽ dẫn đến route đó *@
-        <RouteView RouteData="@routeData">
+
+        @* RoutView: nghĩa là khi / đến route nào thì nó sẽ dẫn đến route đó vd: "/" hoặc "/register"*@
+        <RouteView RouteData="@routeData" DefaultLayout="typeof(HomePageMaster)">@*Tự Thêm DefaultLayout="typeof(HomePageMaster)" để nếu muốn dùng chung layout của HomePageMaster cho toàn bộ trang thì không cần phải @layout HomePageMaster cho từng trang*@
         </RouteView>
 
 

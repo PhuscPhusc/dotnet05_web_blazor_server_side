@@ -1,5 +1,9 @@
 @* Cho phép dùng các component trong folder Components *@
-@* @using web_blazor_server.Components  - Không cần nữa vì trong _Import.razor để @using web_blazor_server.Components rồi*@
+@* @using web_blazor_server.Components  - Không cần nữa vì trong _Import.razor để @using web_blazor_server.Components rồi chỉ cần <Header />*@
+
+
+@* dùng @layout HomePageMaster để sử dụng chung được phần <Header /> và footer - Dùng để chỉ định 1 layout cụ thể *@
+@layout HomePageMaster 
 
 @* Tên file .razor sẽ viết IN HOA chữ cái đầu tiên *@
 
@@ -9,5 +13,5 @@
 
 
 
-<Header /> @*Lưu ý gõ ĐÚNG TÊN FILE CHỨA HEAD*@
+@* <Header /> Lưu ý gõ ĐÚNG TÊN FILE CHỨA HEAD - Không cần nữa vì đã tạo folder Shared chứa HomePageMaster.razor(chứa <Header> và footer dùng chung cho toàn bộ trang web) *@
 <h1>Đây là trang Chủ</h1>

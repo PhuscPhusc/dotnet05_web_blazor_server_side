@@ -25,7 +25,7 @@
         integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 
 
-    <component type="typeof(HeadOutlet)" render-mode="Server" />
+    <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
     
 </head>
 
@@ -49,7 +49,7 @@
         Trong _Host này qui định 1 thằng gốc là App - nghĩa là nguyên ứng dụng sẽ chứa trong App - Gọi là cơ chế SPA(Single Page Application) 
         1 trang html duy nhất (chính) - Nội dung các trang khác(trang phụ). VD: index/contact/register -> dùng code để tạo ra thay vì dùng html tạo như trước => Gọi là cơ chế Component
     *@
-    <component type="typeof(App)" render-mode="Server" /> @*App: tương tự như hàm main, giúp chọn file chạy đầu tiên của ứng dụng => Tạo App.razor ở thư mục ngoài*@
+    <component type="typeof(App)" render-mode="ServerPrerendered" /> @*App: tương tự như hàm main, giúp chọn file chạy đầu tiên của ứng dụng => Tạo App.razor ở thư mục ngoài*@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
